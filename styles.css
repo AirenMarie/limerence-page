@@ -84,11 +84,11 @@ legend {
 }
 
 .is-hidden {
-  visibility: visible;
+  visibility: collapse;
 }
 
 .is-visible {
-  visibility: collapse;
+  visibility: visible;
 }
 
 #thank-you-msg {
