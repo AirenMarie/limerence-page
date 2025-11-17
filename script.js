@@ -6,9 +6,10 @@ const submitBtn = document.getElementById("submit-btn");
 let pageSections = document.getElementsByClassName("page-section");
 
 submitBtn.addEventListener("click", () => {
-  surveySection.classList.toggle("is-hidden");
+  // surveySection.classList.toggle("is-hidden");
+  surveySection.innerHTML = `<p id="thank-you-msg">Thanks for your feedback!</p>`;
 
   Array.from(pageSections).forEach((section) => {
-    section.classList.toggle("is-hidden");
+    section.classList.toggle("is-visible");
   });
 });
