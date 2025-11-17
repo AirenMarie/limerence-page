@@ -39,6 +39,10 @@ main {
   float: right;
 }
 
+#brief-survey {
+  visibility: visible;
+}
+
 #survey-form {
   display: flex;
   flex-direction: column;
@@ -81,6 +85,10 @@ legend {
   border-radius: 7px;
   border: 1px solid #f0e2f3;
   margin-top: 1em;
+}
+
+.page-section {
+  visibility: hidden;
 }
 
 .example-item,
