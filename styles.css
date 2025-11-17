@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  background-color: #651365;
+  color: #f0e2f3;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 18vw;
+  top: 0%;
+  left: 0%;
+  width: 20vw;
+  height: 100%;
+  border-right: solid;
+  border-color: #f0e2f3;
+  font-size: 1rem;
+}
+
+#site-header {
+  font-size: 1.3rem;
+  padding: 10px 30px;
+  font-weight: bold;
+}
+
+.nav-item {
+  display: block;
+  list-style: none;
+  border-top: 1px solid #f0e2f3;
+  padding: 10px 30px 10px 0;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+main {
+  width: 75vw;
+  float: right;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.survey-portion {
+  width: 85%;
+  border: none;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 3px solid #f0e2f3;
+  margin-top: 1em;
+}
+
+legend {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.answer {
+  margin: 5px;
+}
+
+#input-block {
+  background-color: #f0e2f3;
+  color: #651365;
+  border: none;
+  border-radius: 7px;
+  font-size: 0.9em;
+}
+
+#submit-btn {
+  background-color: #651365;
+  color: #f0e2f3;
+  font-size: 1.4em;
+  padding: 5px 12px;
+  border-radius: 7px;
+  border: 1px solid #f0e2f3;
+  margin-top: 1em;
+}
+
+.example-item,
+.source-item {
+  padding: 5px;
+}
+
+#Sources {
+  font-size: 0.8rem;
+  margin-top: 40px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}

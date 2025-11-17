@@ -7,28 +7,28 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header id="site-header">A Bit of Info About Limerence</header>
     <nav id="navbar">
-      <ul>
-        <li>
+      <header id="site-header">A Bit of Info About Limerence</header>
+      <ul id="nav-link-list">
+        <li class="nav-item">
           <a href="#Introduction" class="nav-link">Introduction</a>
         </li>
-        <li>
+        <li class="nav-item">
           <a href="#What_is_limerence_exactly" class="nav-link"
             >What is limerence?</a
           >
         </li>
-        <li>
+        <li class="nav-item">
           <a href="#What_are_some_misconceptions" class="nav-link"
             >Some misconceptions</a
           >
         </li>
-        <li>
+        <li class="nav-item">
           <a href="#Why_is_this_important_to_me" class="nav-link"
             >Why this is important</a
           >
         </li>
-        <li>
+        <li class="nav-item">
           <a href="#Sources" class="nav-link">Sources</a>
         </li>
       </ul>
@@ -36,28 +36,49 @@
     <main>
       <section class="page-section" id="brief-survey">
         <form id="survey-form">
-          <label for="have-you-heard">Have you heard of limerence?</label>
-          <label for="yes">
-            <input type="radio" name="have-you-heard" id="yes" />Yes
-          </label>
-          <label for="no">
-            <input type="radio" name="have-you-heard" id="no" />No
-          </label>
-          <label for="maybe">
-            <input type="radio" name="have-you-heard" id="maybe" />Maybe
-          </label>
-          <label for="what-you-know"
-            >If yes or maybe, what is your best understanding of the subject?
-            Share your thoughts.</label
-          >
-          <label for="input-block">
-            <textarea
-              name="what-you-know"
-              id="input-block"
-              rows="5"
-              cols="30"
-            ></textarea>
-          </label>
+          <fieldset class="survey-portion">
+            <legend><b>Have you heard of limerence?</b></legend>
+            <label for="yes">
+              <input
+                type="radio"
+                name="have-you-heard"
+                class="answer"
+                id="yes"
+              />Yes
+            </label>
+            <label for="no">
+              <input
+                type="radio"
+                name="have-you-heard"
+                class="answer"
+                id="no"
+              />No
+            </label>
+            <label for="maybe">
+              <input
+                type="radio"
+                name="have-you-heard"
+                class="answer"
+                id="maybe"
+              />Maybe
+            </label>
+          </fieldset>
+          <fieldset class="survey-portion">
+            <legend>
+              <b
+                >If yes or maybe, what is your best understanding of the
+                subject? Share your thoughts.</b
+              >
+            </legend>
+            <label for="input-block">
+              <textarea
+                name="what-you-know"
+                id="input-block"
+                rows="10"
+                cols="50"
+              ></textarea>
+            </label>
+          </fieldset>
           <button type="submit" id="submit-btn">Submit</button>
         </form>
       </section>
@@ -78,45 +99,43 @@
           book, <i>Love and Limerence.</i> In her book, she describes this
           emotional state as having certain characteristics, including:
         </p>
-        <blockquote>
-          <ul>
-            <li>
-              intrusive thinking about the object of your passionate desire (the
-              limerent object or "LO"), who is a possible sexual partner;
-            </li>
-            <li>acute longing for reciprocation;</li>
-            <li>
-              dependency of mood on LO's actions or, more accurately, your
-              interpretation of LO's actions with respect to the probability of
-              reciprocation;
-            </li>
-            <li>
-              inability to react limerently to more than one person at a time
-              (exceptions occur only when limerence is at low ebb—early on or in
-              the last fading);
-            </li>
-            <li>
-              fear of rejection and sometimes incapacitating but always
-              unsettling shyness in LO's presence, especially in the beginning
-              and whenever uncertainty strikes;
-            </li>
-            <li>
-              acute sensitivity to any act or thought or condition that can be
-              interpreted favorably, and an extraordinary ability to devise or
-              invent "reasonable" explanations for why the neutrality that the
-              disinterested observer might see is in fact a sign of hidden
-              passion in the LO;
-            </li>
-            <li>
-              buoyancy (a feeling of walking on air) when reciprocation seems
-              evident; and
-            </li>
-            <li>
-              a general intensity of feeling that leaves other concerns in the
-              background.
-            </li>
-          </ul>
-        </blockquote>
+        <ul class="example-list">
+          <li class="example-item">
+            intrusive thinking about the object of your passionate desire (the
+            limerent object or "LO"), who is a possible sexual partner;
+          </li>
+          <li class="example-item">acute longing for reciprocation;</li>
+          <li class="example-item">
+            dependency of mood on LO's actions or, more accurately, your
+            interpretation of LO's actions with respect to the probability of
+            reciprocation;
+          </li>
+          <li class="example-item">
+            inability to react limerently to more than one person at a time
+            (exceptions occur only when limerence is at low ebb—early on or in
+            the last fading);
+          </li>
+          <li class="example-item">
+            fear of rejection and sometimes incapacitating but always unsettling
+            shyness in LO's presence, especially in the beginning and whenever
+            uncertainty strikes;
+          </li>
+          <li class="example-item">
+            acute sensitivity to any act or thought or condition that can be
+            interpreted favorably, and an extraordinary ability to devise or
+            invent "reasonable" explanations for why the neutrality that the
+            disinterested observer might see is in fact a sign of hidden passion
+            in the LO;
+          </li>
+          <li class="example-item">
+            buoyancy (a feeling of walking on air) when reciprocation seems
+            evident; and
+          </li>
+          <li class="example-item">
+            a general intensity of feeling that leaves other concerns in the
+            background.
+          </li>
+        </ul>
         <p>
           Here's
           <a href="https://en.wikipedia.org/wiki/Limerence" target="_blank"
@@ -137,19 +156,19 @@
           life coach Stephanie Lazzara lists some common misconceptions about
           limerence, including:
         </p>
-        <ul>
-          <li>
+        <ul class="example-list">
+          <li class="example-item">
             <b>Limerence is "just a crush."</b> As stated before, this is not
             the case. Unlike a normal crush, limerence involves intense,
             intrusive thinking and interferes with other aspects of one's life
             to the point of disruption.
           </li>
-          <li>
+          <li class="example-item">
             <b>Limerence is something you can "get over."</b> This idea can
             cause shame in those who experience it, as they are unable to easily
             recover from the intense emotions that come from it.
           </li>
-          <li>
+          <li class="example-item">
             <b>Limerence is all about attraction.</b> WHile attraction is a
             factor, much of limerence stems from a need for emotional connection
             with and attention from someone, which itself stems from other
@@ -170,22 +189,24 @@
       </section>
       <section class="page-section" id="Sources">
         <h2>Sources:</h2>
-        <ul>
-          <li>
+        <ul id="source-list">
+          <li class="source-item">
             <a
               href="https://www.barnesandnoble.com/w/love-and-limerence-dorothy-tennov/1113491253"
               target="_blank"
               ><i>Love and Limerence: The Experience of Being in Love</i></a
-            >(1979) by Dorothy Tennov
+            >
+            (1979) by Dorothy Tennov
           </li>
-          <li>
+          <li class="source-item">
             <a
               href="https://www.stephlazzara.com/blog/2023/5/27/the-most-misunderstood-form-of-love-limerence"
               target="_blank"
               ><i>The Most Misunderstood Form of Love: Limerence</i></a
-            >(May, 27, 1993)
+            >
+            (May 27, 2023) by Stephanie Lazzara
           </li>
-          <li>
+          <li class="source-item">
             <a href="https://en.wikipedia.org/wiki/Limerence" target="_blank"
               >Limerence</a
             >
