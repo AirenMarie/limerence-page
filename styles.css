@@ -39,10 +39,6 @@ main {
   float: right;
 }
 
-#brief-survey {
-  visibility: visible;
-}
-
 #survey-form {
   display: flex;
   flex-direction: column;
@@ -87,8 +83,19 @@ legend {
   margin-top: 1em;
 }
 
-.page-section {
-  visibility: hidden;
+.is-hidden {
+  visibility: visible;
+}
+
+.is-visible {
+  visibility: collapse;
+}
+
+#thank-you-msg {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #f0e2f3;
+  border-radius: 7px;
 }
 
 .example-item,
