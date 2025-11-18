@@ -39,6 +39,18 @@ main {
   float: right;
 }
 
+/* .is-hidden {
+  display: none;
+}
+
+.is-visible {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 3px solid #f0e2f3;
+  margin-top: 1em;
+}
+ */
 #survey-form {
   display: flex;
   flex-direction: column;
@@ -83,14 +95,6 @@ legend {
   margin-top: 1em;
 }
 
-.is-hidden {
-  visibility: collapse;
-}
-
-.is-visible {
-  visibility: visible;
-}
-
 #thank-you-msg {
   text-align: center;
   padding: 20px;
@@ -98,6 +102,10 @@ legend {
   border-radius: 7px;
 }
 
+/* .page-section {
+  visibility: collapse;
+}
+ */
 .example-item,
 .source-item {
   padding: 5px;

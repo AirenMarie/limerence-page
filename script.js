@@ -1,12 +1,12 @@
 // Toggle the survey and info
 // Toggle navigation links
-const navbar = document.getElementById("navbar");
-let surveyPortions = document.getElementsByClassName("survey-portion");
+/* let surveyPortions = document.querySelector(".survey-portion");
 const submitBtn = document.getElementById("submit-btn");
-let pageSections = document.getElementsByClassName("page-section");
+let pageSections = document.querySelector(".page-section");
 let thanksMsg = document.getElementById("thank-you-msg");
 
-submitBtn.addEventListener("click", () => {
+submitBtn.addEventListener("click", (event) => {
+  event.preventDefault();
   Array.from(surveyPortions).forEach((portion) => {
     portion.classList.toggle("is-hidden");
   });
@@ -16,4 +16,5 @@ submitBtn.addEventListener("click", () => {
   });
 
   thanksMsg.classList.toggle("is-visible");
-});
+  thanksMsg.textContent = "Thank you for sharing!";
+}); */
