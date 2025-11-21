@@ -34,7 +34,7 @@
   text-decoration: none;
 }
 
-main {
+#info {
   width: 75vw;
   float: right;
 }
@@ -96,6 +96,8 @@ legend {
 }
 
 #thank-you-msg {
+  width: 75vw;
+  float: right;
   text-align: center;
   padding: 20px;
   border: 1px solid #f0e2f3;
