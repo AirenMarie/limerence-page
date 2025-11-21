@@ -39,18 +39,18 @@ main {
   float: right;
 }
 
-/* .is-hidden {
+.is-hidden {
   display: none;
 }
 
 .is-visible {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-bottom: 3px solid #f0e2f3;
-  margin-top: 1em;
+  display: block;
 }
- */
+
+#brief-survey {
+  float: right;
+}
+
 #survey-form {
   display: flex;
   flex-direction: column;
@@ -102,10 +102,6 @@ legend {
   border-radius: 7px;
 }
 
-/* .page-section {
-  visibility: collapse;
-}
- */
 .example-item,
 .source-item {
   padding: 5px;
